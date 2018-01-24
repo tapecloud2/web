@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <title>Tapecloud2(._.</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="colors.js"></script>
+</head>
+<body>
+  <h1><a href="index.html">Tapecloud2</a></h1>
+  <input type="button" value="night" onclick="
+     nightDayHandler(this);
+  ">
+  <div id="grid">
+    <ul>
+      <p style="margin-top:20px;"> </p>
+      <li>-<a href="M.html" style="color:skyblue;text-decoration:underline">Music : kpop, pop, R&B</a></li>
+    <ol>
+      <li>kpop</li>
+      <li>pop</li>
+      <li>Electronica</li>
+      <li>R&B</li>
+    </ol>
+      <li>-<a href="G.html">Game : Overwatch</a></li>
+      <li>-<a href="D.html">Drama : Neflix, HBO</a></li>
+    </ul>
+    <div>
+      <h2>MUSIC</h2>
+      <img id="myImage" src="tapeicon.png" style="width:120px">
+      <input type="button" id="switch" value="ON" onclick="
+	      var target = document.getElementById('myImage');
+          if(this.value === 'ON'){
+	      target.src='tape_w.png';
+	      this.value='OFF';
+	      } else {
+	      target.src='tapeicon.png';
+	      this.value  ='ON';
+	        }
+        ">
+      <p><a href="https://soundcloud.com/stream"target="_blank" title="kelly watson's soundcloud"
+        >soundcloud</a></P>
+    </div>
+  </div>
+
+</body>
+</html>
